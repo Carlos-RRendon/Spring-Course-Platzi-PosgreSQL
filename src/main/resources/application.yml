@@ -5,3 +5,4 @@ spring:
 server:
   servlet:
     context-path: /charles-pruebas/api/1.0
+

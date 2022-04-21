@@ -2,3 +2,10 @@ server:
   port: 8890
   servlet:
     context-path: /charles-pruebas/api/1.0
+
+#Database
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/platzi-market
+    username: postgres
+    password: admin
