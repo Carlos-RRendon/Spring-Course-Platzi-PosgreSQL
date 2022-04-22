@@ -5,6 +5,7 @@ import com.platzi.posgresql.domain.repository.ProductRepository;
 import com.platzi.posgresql.persistence.crud.ProductoCrudRepository;
 import com.platzi.posgresql.persistence.entity.Producto;
 import com.platzi.posgresql.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,7 +14,11 @@ import java.util.Optional;
 //Decorar la clase por buena practica se puede usar @Repository o @Componen (esta es mas generica)
 @Repository
 public class ProductoRepository implements ProductRepository {
+
+    @Autowired
     private ProductoCrudRepository productoCrudRepository;
+
+    @Autowired
     private ProductMapper mapper;
 
     @Override
