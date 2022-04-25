@@ -23,6 +23,7 @@ public class PurchaseService {
     }
 
     public Purchase save(Purchase purchase){
+
         return purchaseRepository.save(purchase);
     }
 
