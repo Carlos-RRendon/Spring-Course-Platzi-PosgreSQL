@@ -3,7 +3,7 @@ package com.platzi.posgresql.domain.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
+@Data @AllArgsConstructor
 public class AuthenticationResponse {
-    private String jwt;
+    private String token;
 }
